@@ -4,11 +4,80 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 a,
 button,
 h1,
 h2,
 h3,
 h4 {
-  color: rgb(40, 40, 40);
+  color: rgb(50, 50, 50);
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 20%;
+  min-height: 10vh;
+  background: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+nav,
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.nav-links a,
+.nav-links button {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.buy-button {
+  padding: 0.2rem 1.5rem;
+  font-size: 0.8rem;
+  color: white;
+  background: #3056f5;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+/* First Page */
+
+.first-page {
+  min-height: 100vh;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.first-page-text {
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.first-page-title {
+  font-size: 1.5rem;
+}
+
+.first-page-subtitle {
+  font-size: 3rem;
+}
+
+.intro-video {
+  position: absolute;
 }
